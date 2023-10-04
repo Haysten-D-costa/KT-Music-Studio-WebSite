@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    color: whitesmoke;
+    background-color: #17293f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#nav-logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: #00ffee;
+}
+.secondary-style {
+    font-size: 45px;
+    color: #ffffff;
+    font-family:Arial, sans-serif;
+}
+.tertiary-color {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:normal;
+    font-size: 50px;
+    color:#00ffee;
+}
+.normal {
+    color: #00ffee;
+}
+.top-navigation-bar {
+    position: sticky;
+    top: 0px;
+    background-color: #04001b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-bar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-left: 20px;
+    font-size: 30px;
+}
+.nav-bar-content {
+    border-radius: 10px;
+    margin: 5px 10px 0px 10px;
+    padding: 5px 10px 5px 10px;
+}
+.nav-bar-content:active { 
+    color:#00ffee;  
+}
+a:any-link {
+    text-decoration: none;
+}
+.nav-bar-content:visited { 
+    color:#00ffee; 
+}
+#search-bar {
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+.profile-pic {
+    height: 500px;
+    width: 400px;
+    margin: 0px 50px 10px ;
+    border-radius: 200px;
+}
+#home-section {
+    height: 800px;
+    text-align: left;
+    background-color: #17293f;
+}
+.content {
+    padding: 0px 50px 0px; 
+}
+#services-section {
+    height: 800px;
+    background-color:#17293f;
+}
+#service-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.service-images {
+    border-radius: 145px;
+}
+/* #skills-section {
+    height: 800px;
+    background-color: #17293f;
+} */
+#contact-section {
+    height: 1000px;
+    background-color:#17293f;
+}
+#footer-section {
+    text-align: center;
+    background-color: #04001b;
+    padding: 20px;
+}
+.headers {
+    background-color: #04001b;
+    border-radius: 0px 0px 0px 30px;
+    position: sticky;
+    top: 80px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 130px;
+}
+#about-section {
+    height: 800px;
+    background-color:#17293f;
+}
+#registration-form {
+    margin: 60px 0px 60px;
+}
+.about-content {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons {
+    width: 319px;
+    height: 50px;
+    margin: 10px;
+    font-size: 20px;
+    color: #00ffee;
+    background-color: #04001b;
+}
