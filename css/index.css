@@ -67,11 +67,17 @@ a:any-link {
     width: 400px;
     margin: 0px 50px 10px ;
     border-radius: 200px;
+    border: 20px double #04001b;
 }
 #home-section {
     height: 800px;
     text-align: left;
     background-color: #17293f;
+}
+.home-image {
+    border: 10px double #04001b;
+    height: 350px;
+    width: 600px;
 }
 .content {
     padding: 0px 50px 0px; 
@@ -87,6 +93,7 @@ a:any-link {
     margin-bottom: 40px;
 }
 .service-images {
+    border: 10px double #00ffee;
     border-radius: 145px;
 }
 /* #skills-section {
