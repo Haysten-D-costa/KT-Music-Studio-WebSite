@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>HTML WebPractice</title>
 </head>
 <body>
     <nav class="top-navigation-bar">
         <div id="nav-logo" class="nav-bar"> KEYzN<span class="secondary-style">Tonez</span> </div>
         <div id="nav_contents" class="nav-bar">
-            <a href="#home-section" class="nav-bar-content" id="home"><p>Home</p></a>
             <a href="#about-section" class="nav-bar-content" id="about-us"><p>About us</p></a>
+            <a href="#home-section" class="nav-bar-content" id="home"><p>Home</p></a>
             <a href="#services-section" class="nav-bar-content" id="services"><p>Services</p></a>
-            <!-- <a href="#skills-section" class="nav-bar-content" id="skills"><p>Skills</p></a> -->
             <a href="#contact-section" class="nav-bar-content" id="contact-us"><p>Contact us</p></a>
         </div>
         <div id="nav-search" class="nav-bar">
@@ -24,14 +23,39 @@
     <section id="about-section">
         <h1 class="headers"><span class="normal">ABOUT-US</span class="secondary-style"> Section</h1>
         <div class="about-content">
-            <figure id="profile-picture">
-                <img src="../img/cleff.jpg" alt="profile-pic" class="profile-pic">
-            </figure>
-            <p>Hello, my name is<br><span class="secondary-style">HAYSTEN </span><span class="tertiary-color"> D'costa</span><br>I'am a Student at Agnel Institute of Technology and Design...
-            <br><br><br>Lorem, ipsum dolor sit amet <strong class="normal">consectetur</strong> adipisicing elit. 
-            <br>Assumenda esse <span class="normal">voluptatum</span> doloremque eum facere sequi! Praesentium atque recusandae magni dolor porro laborum itaque distinctio repudiandae? 
-            <br>
-            <br>Labore repellat ducimus, tenetur soluta porro <span class="normal">dolorem</span> provident placeat similique quia veritatis consectetur, praesentium fugit cum nam consequatur. Qui quas optio, molestias suscipit explicabo mollitia!</p>
+            <div>
+                <h2 style="margin-left: 50px; font-size: 20px;"><span class="tertiary-color">Welcome to KeyzNTonez Music Studio</span></h2>
+                <figure id="profile-picture">
+                    <img src="../img/cleff.jpg" alt="profile-pic" class="profile-pic">
+                </figure>
+            </div>
+            <div style="padding:100px;">
+                <dl> <!--description list-->
+                    <dt align="center" style="background-color:#04001b"><span class="secondary-style">OUR VISION !</span></dt>
+                    <dd align="center" style="padding: 0px 20px;"> <!--description data-->
+                        <br><br>Keys and Tones envisions a world where the transformative power of music enriches lives and transcends boundaries. 
+                        <br><br> We strive to cultivate a community where creativity knows no limits, where melodies unite hearts, and where every individual discovers their unique musical identity. Through unwavering dedication to excellence, 
+                        we aim to lead the way in providing a nurturing and innovative environment for aspiring musicians of all ages.<br><br>
+                        In our vision, Keys and Tones becomes a global hub,fostering a symphony of cultural diversity and artistic expression. We empower our students to embrace challenges, to uncover the symphony within themselves, 
+                        and to resonate with the rhythm of the world around them. <br><br>Through collaboration and harmony, we envision our institute as a beacon of inspiration, a place where notes become narratives, 
+                        and where each crescendo is a step towards personal and collective fulfillment.<br><br><br>
+                    </dd>
+            
+                    <dt align="center" style="background-color:#04001b"><span class="secondary-style">OUR MISSION !</span></dt>
+                    <dd align="center">
+                        <br><br><br>Our mission is to provide exceptional music education that nurtures both technical prowess and creative expression.<br>
+                        Through personalized instruction, immersive experiences, and a supportive environment, we aim to inspire a lifelong love
+                        for music and help our students realize their full musical potential.<br><br>
+                    </dd>
+                    <dt align="center" style="background-color:#04001b"><span class="secondary-style">JOIN US !</span></dt>
+                    <dd align="center">
+                        <br><br><br>Whether you're an aspiring virtuoso or someone simply seeking the joy of creating music, 
+                        Keys and Tones Music Institute invites you to join our vibrant community.<br>
+                        Let us be your guide as you unlock the potential of each note and embrace the magic of music.<br><br>
+                        Come, discover, and create with us at Keys and Tones.<br><br>
+                    </dd>
+                </dl>
+            </div>  
         </div>
     </section>
     <section id="home-section">
@@ -40,32 +64,54 @@
             <h2 class="normal">Sample home page header...</h2>
             <br>
             <figure><img src="../img/headphones.jpg" class="home-image" alt="Music splash image..."></figure>
-            <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat saepe nemo similique! Beatae rem, 
-            <br><br><span class="normal">fuga</span>  dicta ducimus voluptas ut commodi quasi aperiam,<br>expedita velit provident iste tenetur cumque, officia adipisci fugit recusandae doloribus. Ad pariatur labore nulla temporibus quam voluptates! Praesentium autem saepe quo ratione quas, numquam expedita 
-            blanditiis minima tempore voluptates officiis accusamus ipsam repellat eligendi nesciunt dolore aliquam facilis minus rerum? Omnis eos doloribus laudantium cum repellendus autem ratione, <br>veniam alias earum recusandae ex a. Ea sapiente hic nisi ullam vitae? Maxime quae
-            quasi sapiente? Odio corporis quo neque earum cum officiis volupta saepe reprehenderit libero consequatur amet maxime eaque, ad nemo ab ex nihil quia tempore temporibus! Mollitia pariatur eos accusamus quaerat laudantium odio aut corrupti quidem et blanditiis perferendis voluptates, vel harum culpa! Quam
-            incidunt ratione omnis, dolore laboriosam fugiat illum laborum libero obcaecati tempora ad animi, beatae placeat ipsum voluptatibus soluta corrupti pariatur? Molestiae, culpa fugiat <br>repudiandae dolorem praesentium 
+            <br><br>
+            <h2>Why Choose KeyzNTonez?</h2>
+            <ul>
+                <li>Experienced Instructors: Our team of instructors is comprised of accomplished musicians with a passion for teaching.</li>
+                <li>Community: We foster a sense of community among our students. Join us for jam sessions, open mics, and other events to connect with fellow musicians.</li>
+                <li>Modern Facilities: Our studio is equipped with the latest technology and high-quality instruments to enhance your learning and creative experience.</li>
+                <li>Flexible Scheduling: We understand that life can be busy. That's why we offer flexible scheduling options to accommodate your availability.</li>
+            </ul>
+            <br><br>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Private Lessons: Our talented and experienced instructors offer one-on-one lessons tailored to your skill level and musical interests.</li>
+                <li>Group Workshops: Join our engaging group workshops and collaborate with other musicians.</li>
+                <li>Recording and Production: Take advantage of our state-of-the-art recording and production facilities.</li>
+                <li>Rehearsal Space: Need a place to practice with your band? We offer well-equipped rehearsal spaces.</li>
+            </ul>
+            <br><br>
+            <h3>FOR NOTES and more....<a href="../pdf/CheatSheets.pdf" target="_self">Click here !!!</a></h3>
         </article>
     </section>
     <section id="services-section">
         <h1 class="headers"><span class="normal">SERVICES</span class="secondary-style"> Section</h1>
         <div id="service-container">
-            <figure>
-                <img src="../img/piano.jpg" class="service-images" alt="PianoPic" height="300px" width="300px">
-                <figcaption><span class="normal">Keyboard / Piano Tutorials</span></figcaption>
-            </figure>
-            <figure>
-                <img src="../img/guitar.jpg" class="service-images" alt="GuitarPic" height="300px" width="300px">
-                <figcaption><span class="normal">Guitar Tutorials</span></figcaption>
-            </figure>
-            <figure>
-                <img src="../img/vocals.jpg" class="service-images" alt="VocalPic" height="300px" width="300px">
-                <figcaption><span class="normal">Vocal / Singing Tutorials</span></figcaption>
-            </figure>
-            <figure>
-                <img src="../img/drums.jpg" class="service-images" alt="DrumPic" height="300px" width="300px">
-                <figcaption><span class="normal">Drum / Jazz Tutorials</span></figcaption>
-            </figure>
+
+            <a href="https://en.wikipedia.org/wiki/Piano" target="_blank">
+                <figure>
+                    <img src="../img/piano.jpg" class="service-images" alt="PianoPic" height="300px" width="300px">
+                    <figcaption><span class="normal">Keyboard / Piano Tutorials</span></figcaption>
+                </figure>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Guitar" target="_blank">
+                <figure>
+                    <img src="../img/guitar.jpg" class="service-images" alt="GuitarPic" height="300px" width="300px">
+                    <figcaption><span class="normal">Guitar Tutorials</span></figcaption>
+                </figure>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Vocals" target="_blank">
+                <figure>
+                    <img src="../img/vocals.jpg" class="service-images" alt="VocalPic" height="300px" width="300px">
+                    <figcaption><span class="normal">Vocal / Singing Tutorials</span></figcaption>
+                </figure>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Drums" target="_blank">
+                <figure>
+                    <img src="../img/drums.jpg" class="service-images" alt="DrumPic" height="300px" width="300px">
+                    <figcaption><span class="normal">Drum / Jazz Tutorials</span></figcaption>
+                </figure>
+            </a>
         </div>
         <div class="content">
             <h2 class="normal">SAMPLE SERVICES HEADER : </h2>
@@ -73,23 +119,81 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo nesciunt facere provident ratione eos. Quo, dicta, sint ut magni accusantium et nesciunt nihil similique, ex itaque tenetur commodi officiis corrupti! THis sdfls d athsl dka peskfj  flsdkfs diao</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iusto magnam quod officiis! Incidunt quisquam laborum vel, non sint, mollitia nemo doloremque, labore sequi molestiae minus magnam? <br>Ratione ullam corporis iste ducimus perferendis vero blanditiis?</p>
         </div>
+        <div class="time-table">
+            <table border="1" width="90%" style="background-color: #bebebe; color: black; padding: 10px;"> <!--table link-->
+                <caption style="background-color:#04001b; color: white;"><h2>SCHEDULE OF COURSES / TUTORIALS OFFERED !</h2></caption>
+                <tr style="height: 40px;"> <!--table row link-->
+                    <th rowspan="3">Days</th> <!--table header link-->
+                    <th colspan="4">Classes / Tutorials</th>
+                </tr>
+                <tr style="height: 40px;">
+                    <th colspan="2">Schedule</th>
+                    <th rowspan="2">Topic</th>
+                    <th rowspan="2">Fees</th>
+        
+                </tr>
+                <tr style="height: 40px;">
+                    <th>Begin</th>
+                    <th>End</th>
+                </tr>
+                <tr style="height: 40px;" align="center">
+                    <td>Monday & Tuesday</td> <!--table data link-->
+                    <td>2:00pm</td>
+                    <td>4:00pm</td>
+                    <td>Keyboard Tutorials</td>
+                    <td>Rs. 1200 /-</td>
+                </tr>
+                <tr style="height: 40px;" align="center">
+                    <td>Tuesday & Wednesday</td>
+                    <td>2:00pm</td>
+                    <td>4:00pm</td>
+                    <td>Vocals Tutorials</td>
+                    <td>Rs. 999 /-</td>
+                </tr>
+                <tr style="height: 40px;" align="center">
+                    <td>Wednesday & Thursday</td>
+                    <td>2:00pm</td>
+                    <td>4:00pm</td>
+                    <td>Guitar Tutorials</td>
+                    <td>Rs. 700 /-</td>
+                </tr>
+                <tr style="height: 40px;" align="center">
+                    <td>Thursday & Friday</td>
+                    <td>4:00pm</td>
+                    <td>8:00pm</td>
+                    <td>Drums Tutorials</td>
+                    <td>Rs. 2500 /-</td>
+                </tr>
+                <tr style="height: 40px;" align="center">
+                    <td>Friday & Saturday</td>
+                    <td>3:00pm</td>
+                    <td>6:00pm</td>
+                    <td>Violin Tutorials</td>
+                    <td>Rs. 3000 /-</td>
+                </tr>
+            </table>
+        </div>
     </section>
     <!-- <section id="skills-section">
         <h1 class="headers"><span class="normal">SKILLS</span class="secondary-style"> Section</h1>
     </section> -->
     <section id="contact-section">
         <h1 class="headers"><span class="normal">CONTACT-US</span class="secondary-style"> Section</h1>
-        <form action="/" method="get" align="center" id="registration-form">
+        <form  onsubmit="return validate()" align="center" id="registration-form">
             <br><br>
             <label>Name : </label><br>
-            <input type="text" id="first-name" name="first-name" placeholder="first name" size="45%" style="height:35px" required autocomplete="off">
-            <input type="text" id="last-name" name="last-name" placeholder="last name" size="44%" style="height:35px" required autocomplete="off">
+            <input type="text" id="first-name" name="first-name" placeholder="first name" size="45%" style="height:35px" autocomplete="off">
+            <input type="text" id="last-name" name="last-name" placeholder="last name" size="44%" style="height:35px" autocomplete="off">
             <br><br>
             
             <label for="email">Email : </label><br>
-            <input type="email" id="email" name="email" placeholder="abc@gmail.com" size="95%" style="height:35px" required autocomplete="off">
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" size="95%" style="height:35px" autocomplete="off">
             <br><br>
-            
+
+            <label for="dob">Date of Birth : </label><br>
+			<input type="date" id="dob" name="dob">
+            <br><br>
+
             <label>Gender : </label>
             <input type="radio" id="male" name="gender" value="Male" checked>Male
             <input type="radio" id="female" name="gender" value="Female">Female
@@ -97,22 +201,57 @@
             <br><br>
             
             <label for="ph-number">Phone No. : </label><br>
-            <input type="phone" id="ph-number" placeholder="9999988888" size="95%" style="height:35px" maxlength="10" required>
+            <input type="text" id="ph-number" placeholder="9999988888" size="95%" style="height:35px" maxlength="10">
             <br><br>
             
+            <label>Select your level : </label>
+            <select id="level" size="1">
+                <option value="" selected>NULL
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advance">Advance/Professional</option>
+            </select>
+            <br><br><br>
+
+            <label>Select your choices : </label>
+            <br><br><input type="checkbox" id="key" name="instrument" value="Keyboard" checked>Keyboard / Piano
+            <br><input type="checkbox" id="gui" name="instrument" value="Guitar">Guitar
+            <br><input type="checkbox" id="vio" name="instrument" value="Violin">Violin
+            <br><input type="checkbox" id="dru" name="instrument" value="Drums">Drums / Jazz 
+            <br><input type="checkbox" id="voc" name="instrument" value="Vocals">Vocals
+            <br><br>
+            <label>Choose desired date and time of commence : </label>
+            <input type="datetime-local" id="doc" name="date-time">
+            <br><br>
+            <label>
+                If not satisfied with the uploaded time-table, or incase of other problems with respact to the time table,<br>
+                you may choose your own days of classes....<b><i>(2 days per week...)</i></b><br>
+                <b>Timing may be confirmed later...</b>
+            </label><br><br>
+            <input type="checkbox" id="mon" name="day" value="Monday" checked>Monday
+            <input type="checkbox" id="tue" name="day" value="Tuesday" checked>Tuesday
+            <input type="checkbox" id="wed" name="day" value="Wednesday">Wednesday
+            <input type="checkbox" id="thu" name="day" value="Thursday">Thursday
+            <input type="checkbox" id="fri" name="day" value="Friday">Friday
+            <input type="checkbox" id="sat" name="day" value="Saturday">Saturday
+            <br><br>
+
+
             <label for="address">Address : </label><br>
-            <textarea id="address" rows="10" cols="88" placeholder="Your address here !" required autocomplete="off"></textarea>
+            <textarea id="address" rows="10" cols="88" placeholder="Your address here !" autocomplete="off"></textarea>
             <br><br>
             <label>Comments / Queries : </label><br>
-            <textarea placeholder="Get in touch and send us any of your queries or questoins, type here !!....." rows="5" cols="58"></textarea>
-            <textarea name="" id="" rows="5" cols="27" readonly>CAUTION !
+            <textarea name="feedback" id="feedback" placeholder="Get in touch and send us any of your queries or questoins, type here !!....." rows="5" cols="58"></textarea>
+            <textarea name="caution" id="caution" rows="5" cols="27" readonly>CAUTION !
                 Enter Valid and sensible content please !! Other irrelavent questions will not be entertained !! Please note,
                 THANK YOU
             </textarea>
             <br><br>
             <input class ="buttons" type="reset" value="RESET">
-            <input class ="buttons" type="submit" value="SUBMIT" onsubmit="alert('Response Recorded...')">
+            <input onclick="validate()" class ="buttons" type="submit" value="SUBMIT">
     </form>
+    <script src="../js/script.js"></script>
+
     </section>
     <section id="footer-section">
         <footer>
