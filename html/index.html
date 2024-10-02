@@ -10,8 +10,8 @@
     <nav class="top-navigation-bar">
         <div id="nav-logo" class="nav-bar"> KEYzN<span class="secondary-style">Tonez</span> </div>
         <div id="nav_contents" class="nav-bar">
-            <a href="#about-section" class="nav-bar-content" id="about-us"><p>About us</p></a>
             <a href="#home-section" class="nav-bar-content" id="home"><p>Home</p></a>
+            <a href="#about-section" class="nav-bar-content" id="about-us"><p>About us</p></a>
             <a href="#services-section" class="nav-bar-content" id="services"><p>Services</p></a>
             <a href="#contact-section" class="nav-bar-content" id="contact-us"><p>Contact us</p></a>
         </div>
@@ -20,6 +20,32 @@
             <input type="text" id="search-bar" name="search-bar" size="50px" placeholder="search here">
         </div>
     </nav>
+    <section id="home-section">
+        <h1 class="headers"><span class="normal">HOME</span class="secondary-style"> Section</h1>
+        <article class="content">
+            <h2 class="normal">Sample home page header...</h2>
+            <br>
+            <figure><img src="../img/headphones.jpg" class="home-image" alt="Music splash image..."></figure>
+            <br><br>
+            <h2>Why Choose KeyzNTonez?</h2>
+            <ul>
+                <li>Experienced Instructors: Our team of instructors is comprised of accomplished musicians with a passion for teaching.</li>
+                <li>Community: We foster a sense of community among our students. Join us for jam sessions, open mics, and other events to connect with fellow musicians.</li>
+                <li>Modern Facilities: Our studio is equipped with the latest technology and high-quality instruments to enhance your learning and creative experience.</li>
+                <li>Flexible Scheduling: We understand that life can be busy. That's why we offer flexible scheduling options to accommodate your availability.</li>
+            </ul>
+            <br><br>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Private Lessons: Our talented and experienced instructors offer one-on-one lessons tailored to your skill level and musical interests.</li>
+                <li>Group Workshops: Join our engaging group workshops and collaborate with other musicians.</li>
+                <li>Recording and Production: Take advantage of our state-of-the-art recording and production facilities.</li>
+                <li>Rehearsal Space: Need a place to practice with your band? We offer well-equipped rehearsal spaces.</li>
+            </ul>
+            <br><br>
+            <h3>FOR NOTES and more....<a href="../pdf/CheatSheets.pdf" target="_self">Click here !!!</a></h3>
+        </article>
+    </section>
     <section id="about-section">
         <h1 class="headers"><span class="normal">ABOUT-US</span class="secondary-style"> Section</h1>
         <div class="about-content">
@@ -57,32 +83,6 @@
                 </dl>
             </div>  
         </div>
-    </section>
-    <section id="home-section">
-        <h1 class="headers"><span class="normal">HOME</span class="secondary-style"> Section</h1>
-        <article class="content">
-            <h2 class="normal">Sample home page header...</h2>
-            <br>
-            <figure><img src="../img/headphones.jpg" class="home-image" alt="Music splash image..."></figure>
-            <br><br>
-            <h2>Why Choose KeyzNTonez?</h2>
-            <ul>
-                <li>Experienced Instructors: Our team of instructors is comprised of accomplished musicians with a passion for teaching.</li>
-                <li>Community: We foster a sense of community among our students. Join us for jam sessions, open mics, and other events to connect with fellow musicians.</li>
-                <li>Modern Facilities: Our studio is equipped with the latest technology and high-quality instruments to enhance your learning and creative experience.</li>
-                <li>Flexible Scheduling: We understand that life can be busy. That's why we offer flexible scheduling options to accommodate your availability.</li>
-            </ul>
-            <br><br>
-            <h2>Our Services</h2>
-            <ul>
-                <li>Private Lessons: Our talented and experienced instructors offer one-on-one lessons tailored to your skill level and musical interests.</li>
-                <li>Group Workshops: Join our engaging group workshops and collaborate with other musicians.</li>
-                <li>Recording and Production: Take advantage of our state-of-the-art recording and production facilities.</li>
-                <li>Rehearsal Space: Need a place to practice with your band? We offer well-equipped rehearsal spaces.</li>
-            </ul>
-            <br><br>
-            <h3>FOR NOTES and more....<a href="../pdf/CheatSheets.pdf" target="_self">Click here !!!</a></h3>
-        </article>
     </section>
     <section id="services-section">
         <h1 class="headers"><span class="normal">SERVICES</span class="secondary-style"> Section</h1>
@@ -174,12 +174,9 @@
             </table>
         </div>
     </section>
-    <!-- <section id="skills-section">
-        <h1 class="headers"><span class="normal">SKILLS</span class="secondary-style"> Section</h1>
-    </section> -->
     <section id="contact-section">
         <h1 class="headers"><span class="normal">CONTACT-US</span class="secondary-style"> Section</h1>
-        <form  onsubmit="return validate()" align="center" id="registration-form">
+        <form method="post" action="../php/script.php" onsubmit="return validate()" align="center" id="registration-form">
             <br><br>
             <label>Name : </label><br>
             <input type="text" id="first-name" name="first-name" placeholder="first name" size="45%" style="height:35px" autocomplete="off">
@@ -201,11 +198,11 @@
             <br><br>
             
             <label for="ph-number">Phone No. : </label><br>
-            <input type="text" id="ph-number" placeholder="9999988888" size="95%" style="height:35px" maxlength="10">
+            <input type="text" id="ph-number" name="phoneno" placeholder="9999988888" size="95%" style="height:35px" maxlength="10">
             <br><br>
             
             <label>Select your level : </label>
-            <select id="level" size="1">
+            <select id="level" size="1" name="level">
                 <option value="" selected>NULL
                 <option value="Beginner">Beginner</option>
                 <option value="Intermediate">Intermediate</option>
@@ -215,10 +212,10 @@
 
             <label>Select your choices : </label>
             <br><br><input type="checkbox" id="key" name="instrument" value="Keyboard" checked>Keyboard / Piano
-            <br><input type="checkbox" id="gui" name="instrument" value="Guitar">Guitar
-            <br><input type="checkbox" id="vio" name="instrument" value="Violin">Violin
-            <br><input type="checkbox" id="dru" name="instrument" value="Drums">Drums / Jazz 
-            <br><input type="checkbox" id="voc" name="instrument" value="Vocals">Vocals
+            <br><input type="checkbox" id="gui" name="instrument[]" value="Guitar">Guitar
+            <br><input type="checkbox" id="vio" name="instrument[]" value="Violin">Violin
+            <br><input type="checkbox" id="dru" name="instrument[]" value="Drums">Drums / Jazz 
+            <br><input type="checkbox" id="voc" name="instrument[]" value="Vocals">Vocals
             <br><br>
             <label>Choose desired date and time of commence : </label>
             <input type="datetime-local" id="doc" name="date-time">
@@ -228,14 +225,13 @@
                 you may choose your own days of classes....<b><i>(2 days per week...)</i></b><br>
                 <b>Timing may be confirmed later...</b>
             </label><br><br>
-            <input type="checkbox" id="mon" name="day" value="Monday" checked>Monday
-            <input type="checkbox" id="tue" name="day" value="Tuesday" checked>Tuesday
-            <input type="checkbox" id="wed" name="day" value="Wednesday">Wednesday
-            <input type="checkbox" id="thu" name="day" value="Thursday">Thursday
-            <input type="checkbox" id="fri" name="day" value="Friday">Friday
-            <input type="checkbox" id="sat" name="day" value="Saturday">Saturday
+            <input type="checkbox" id="mon" name="day[]" value="Monday" checked>Monday
+            <input type="checkbox" id="tue" name="day[]" value="Tuesday" checked>Tuesday
+            <input type="checkbox" id="wed" name="day[]" value="Wednesday">Wednesday
+            <input type="checkbox" id="thu" name="day[]" value="Thursday">Thursday
+            <input type="checkbox" id="fri" name="day[]" value="Friday">Friday
+            <input type="checkbox" id="sat" name="day[]" value="Saturday">Saturday
             <br><br>
-
 
             <label for="address">Address : </label><br>
             <textarea id="address" rows="10" cols="88" placeholder="Your address here !" autocomplete="off"></textarea>
@@ -248,10 +244,8 @@
             </textarea>
             <br><br>
             <input class ="buttons" type="reset" value="RESET">
-            <input onclick="validate()" class ="buttons" type="submit" value="SUBMIT">
+            <input class ="buttons" type="submit" value="SUBMIT">
     </form>
-    <script src="../js/script.js"></script>
-
     </section>
     <section id="footer-section">
         <footer>
